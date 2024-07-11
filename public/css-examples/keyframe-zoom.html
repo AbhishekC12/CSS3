@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+    <style>
+       @keyframes zoom {
+          from {
+            margin-left: 140%;
+            margin-top: -40px;
+            width: 50px;
+            height: 60px;
+          }
+          25% {
+            transform: rotate(180deg);
+          }
+          50% {
+            margin-top: 200px;
+            width: 300px;
+            height: 400px;
+          }
+          75% {
+            transform: rotate(360deg);
+          }
+          to {
+            margin-left: -80px;
+            margin-top: -80px;
+            width: 50px;
+            height: 60px;
+          }
+       }
+       img {
+         animation-name: zoom;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+       }
+       body {
+        overflow: hidden;
+       }
+    </style>
+</head>
+<body>
+   <img src="../images/men-fashion.jpg" width="50" height="60">
+</body>
+</html>

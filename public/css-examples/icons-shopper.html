@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .fashion{
+            width: 300px;
+            height: 400px;
+            background-image: url(../images/women-dress.jpg);
+            text-align: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            background-size: cover;
+        }
+        .fashion:hover{
+            background-image: url(../images/men-fashion.jpg);
+            background-size: cover;
+        }
+        .icons span{
+        background-color: red;
+        color: white;
+        margin-right: 10px;
+        border-radius: 60px;
+        font-size: 20px;
+        padding: 5px;
+       }
+       .fashion .icons{
+        margin-top: 440px;
+        transition: 2s;
+       }
+       .fashion:hover .icons{
+        margin-top: 360px;
+        transition: 2s;
+       }
+    </style>
+</head>
+<body>
+    <div class="fashion">
+        <div class="icons">
+            <span class="bi bi-heart-fill"></span>
+            <span class="bi bi-cart3"></span>
+            <span class="bi bi-share"></span>
+        </div>
+    </div>
+</body>
+</html>
